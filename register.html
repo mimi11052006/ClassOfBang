@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of BaNG - Register Clan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Clash of BaNG Logo" class="logo-graphic">
+            <h1>Clash of BaNG</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="troops.html">Troops</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- KONTEN UTAMA: REGISTER FORM -->
+    <main>
+        <section class="register-section">
+            <div class="form-container">
+                <h2 class="form-title">Clan Registration</h2>
+                <p class="form-subtitle">Enlist today and connect with thousands of players worldwide.</p>
+                
+                <!-- Kotak Notifikasi Error/Success -->
+                <div id="form-message" class="form-message"></div>
+                
+                <form id="registerForm">
+                    
+                    <!-- Komponen 1: Input Text -->
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name">
+                    </div>
+
+                    <!-- Komponen 2: Input Text (Untuk Email) -->
+                    <!-- Kita pakai type text agar validasinya 100% dari JS kita, bukan dari bawaan HTML -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" placeholder="e.g., player@clash.com">
+                    </div>
+
+                    <!-- Komponen 3: Input Number -->
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="Enter your age">
+                    </div>
+
+                    <!-- Komponen 4: Input Radio -->
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male" class="radio-label">Male</label>
+                            
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female" class="radio-label">Female</label>
+                        </div>
+                    </div>
+
+                    <!-- Komponen 5: Select / Dropdown -->
+                    <div class="form-group">
+                        <label for="troop">Favorite Troop</label>
+                        <select id="troop">
+                            <option value="">-- Select Your Favorite Troop --</option>
+                            <option value="knight">Shadow Knight</option>
+                            <option value="mage">Void Mage</option>
+                            <option value="golem">Obsidian Golem</option>
+                            <option value="assassin">Night Assassin</option>
+                        </select>
+                    </div>
+
+                    <!-- Komponen 6: Textarea -->
+                    <div class="form-group">
+                        <label for="reason">Reason to Join</label>
+                        <textarea id="reason" rows="4" placeholder="Tell us why you want to join this community..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Register My Clan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 class="footer-title">Clash of BaNG</h3>
+                <p>A growing fan community website inspired by the world-famous Clash-style fantasy universe.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Clash of BaNG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

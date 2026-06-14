@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of BaNG - Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Clash of BaNG Logo" class="logo-graphic">
+            <h1>Clash of BaNG</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="troops.html">Troops</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2 class="main-title">Gallery</h2>
+            <p class="subtitle">Explore our collection of troops, heroes, special artwork, and community moments from Clash of BaNG.</p>
+
+            <div class="filter-container">
+                <button class="filter-btn active-filter" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Troops">Troops</button>
+                <button class="filter-btn" data-filter="Heroes">Heroes</button>
+                <button class="filter-btn" data-filter="Artwork">Artwork</button>
+                <button class="filter-btn" data-filter="Community">Community</button>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <div class="gallery-item" data-category="Troops">
+                    <img src="assets/knight-bg.jpg" alt="Dark Knight" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Dark Knight</h3>
+                        <p class="gallery-tag">Troops</p>
+                        <button class="view-btn" data-title="Dark Knight" data-desc="The early concept art of Shadow Knight showcasing his dark armor and glowing red aura. Designed for close combat and high durability in the battlefield." data-img="assets/knight-bg.jpg">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Troops">
+                    <img src="assets/mage-bg.jpg" alt="Void Mage" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Void Mage</h3>
+                        <p class="gallery-tag">Troops</p>
+                        <button class="view-btn" data-title="Void Mage" data-desc="A mysterious mage who harnesses the power of the void to unleash devastating dark magic upon enemies." data-img="assets/mage-bg.jpg">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Troops">
+                    <img src="assets/golem-bg.jpg" alt="Obsidian Golem" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Obsidian Golem</h3>
+                        <p class="gallery-tag">Troops</p>
+                        <button class="view-btn" data-title="Obsidian Golem" data-desc="A massive obsidian golem with impenetrable armor and crushing strength that shakes the battlefield with every step." data-img="assets/golem-bg.jpg">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Troops">
+                    <img src="assets/assassin-bg.jpg" alt="Night Assassin" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Night Assassin</h3>
+                        <p class="gallery-tag">Troops</p>
+                        <button class="view-btn" data-title="Night Assassin" data-desc="A swift night assassin who strikes from the shadows with deadly precision before vanishing into the darkness." data-img="assets/assassin-bg.jpg">View Details</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="Heroes">
+                    <img src="assets/troops-1.jpg" alt="The Goblins" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>The Goblins</h3>
+                        <p class="gallery-tag">Heroes</p>
+                        <button class="view-btn" data-title="The Goblins" data-desc="A terrifying battlefield monster near the Lanaryu. This is where the highest level Goblins Wars take place." data-img="assets/troops-1.jpg">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Heroes">
+                    <img src="assets/troops-2.jpg" alt="The Moblins" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>The Moblins</h3>
+                        <p class="gallery-tag">Heroes</p>
+                        <button class="view-btn" data-title="The Moblins" data-desc="A mischievous troop of Moblins that overwhelms enemies with quick attacks and chaotic teamwork." data-img="assets/troops-2.jpg">View Details</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="Artwork">
+                    <img src="assets/art-1.jpg" alt="Void Mage Fanart" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Void Mage Artwork</h3>
+                        <p class="gallery-tag">Artwork</p>
+                        <button class="view-btn" data-title="Void Mage Artwork" data-desc="An amazing fan art by community member @DarkArts, showing the Void Mage casting her signature spell." data-img="assets/art-1.jpg">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Artwork">
+                    <img src="assets/art-2.jpg" alt="Dark Knight Fanart" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Dark Knight Artwork</h3>
+                        <p class="gallery-tag">Artwork</p>
+                        <button class="view-btn" data-title="Dark Knight Artwork" data-desc="Fan Artwork showcases creative illustrations and designs made by @DarkFan, inspired by epic battles, Dark Troops, and legendary heroes from the fantasy universe." data-img="assets/art-2.jpg">View Details</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="Community">
+                    <img src="assets/com-1.jpg" alt="Community Hub Jakarta" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Community Hub Jakarta</h3>
+                        <p class="gallery-tag">Community Hub Jakarta</p>
+                        <button class="view-btn" data-title="Community Hub Jakarta" data-desc="Jakarta Community Hub Jakarta serves as the main gathering place for Clash of BaNG fans, offering strategy discussions, clan events, beginner training sessions, and exclusive Dark Troops content for the local gaming community." data-img="assets/com-1.jpg">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Community">
+                    <img src="assets/com-3.jpg" alt="Bandung Gathering" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Bandung Gathering</h3>
+                        <p class="gallery-tag">Bandung Gathering</p>
+                        <button class="view-btn" data-title="Bandung Gathering" data-desc="Bandung Gathering is a community event where Clash of BaNG players meet to share battle strategies, participate in tournaments, and connect with fellow Dark Troops enthusiasts in a fun and competitive atmosphere." data-img="assets/com-3.jpg">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="Community">
+                    <img src="assets/com-2.jpg" alt="Sanur Sunset Victory" class="gallery-img">
+                    <div class="gallery-info">
+                        <h3>Sanur Sunset Victory</h3>
+                        <p class="gallery-tag">Sanur Sunset Victory</p>
+                        <button class="view-btn" data-title="Sanur Sunset Victory" data-desc="Sanur Sunset Victory is a special Clash of BaNG community celebration held by the beach, bringing players together for friendly matches, strategy sharing, and unforgettable sunset gaming moments." data-img="assets/com-2.jpg">View Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="gallery-modal" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img id="modal-img" src="" alt="Detail Image">
+                <div class="modal-text">
+                    <h3 id="modal-title">Title Here</h3>
+                    <p id="modal-desc">Description goes here.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3 class="footer-title">Clash of BaNG</h3>
+                <p>A growing fan community website inspired by the world-famous Clash-style fantasy universe.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Clash of BaNG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
